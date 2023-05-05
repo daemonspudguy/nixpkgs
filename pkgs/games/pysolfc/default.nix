@@ -3,11 +3,11 @@
 
 buildPythonApplication rec {
   pname = "PySolFC";
-  version = "2.16.0";
+  version = "2.20.1";
 
   src = fetchzip {
     url = "https://versaweb.dl.sourceforge.net/project/pysolfc/PySolFC/PySolFC-${version}/PySolFC-${version}.tar.xz";
-    sha256 = "sha256-kklB16IrDicxqMee1kbxtoqgwcSrMjCV4HP6GtnZxo8=";
+    sha256 = "sha256-bb3b90d16810020496e81b9f25fcf563c9fd8704922f24436908874ebca9466a=";
   };
 
   cardsets = fetchzip {
@@ -44,6 +44,6 @@ buildPythonApplication rec {
     description = "A collection of more than 1000 solitaire card games";
     homepage = "https://pysolfc.sourceforge.io";
     license = licenses.gpl3;
-    maintainers = with maintainers; [ kierdavis ];
+    maintainers = with maintainers; [ kierdavis daemonspudguy ];
   };
 }
